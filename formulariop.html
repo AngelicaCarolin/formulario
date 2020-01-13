@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+		<head>
+			<meta charset="utf-8">
+			<title>Formulario</title>
+			<link rel="stylesheet" type="text/css" href="estilosp.css">
+		</head>
+	<body>
+			
+	<div id="completo">		
+		
+		<form action="enviar.php" method="post">
+	
+	
+			<!--Encabezado-->
+			<div id="encbza">
+			<h1>Datos Personales</h1>
+			</div>
+	
+				
+			<!--Contenido-->
+			<div id="cont">
+					<br>
+				<div id="preguntas">
+				<p>
+					<label for="nombyape" id="eti">Nombres y Apellidos</label><br>
+					<input type="text" id="nombyape" value>
+				</p>
+		
+				<p>
+					<label for="fdn" id="eti">Fecha de Nacimiento</label><br>
+					<input type="date" name="" id="fdn" value="fdn">
+				</p>
+				<p>
+					<label for="edad" id="eti">Edad</label><br>
+					<input type="number" name="" id="edad" min="0" value>
+				</p>
+				<p>
+						<label for="correo" id="eti">Ingrese su correo electrónico</label><br>
+						<input type="email" name="correo" id="correo" value>
+				</p>
+				<p>
+						<label for="oficio" name="oficio" id="eti" >Oficio</label><br>
+						<select focus name="Seleccione" id="oficio" >
+							<option>Seleccione</option>
+							<option value="Emp">Empleado</option>
+							<option value="TrbInd">Trabajo dependiente</option>
+							<option value="est">Estudiante</option>
+							<option value="ofHo">Oficios del hogar</option>
+							<option value="Ot">Otro</option>
+							</select>
+				</p>
+						<br>
+
+				<!--Seleccion-->
+				
+				<p>
+					<fieldset>
+						<legend>Género</legend>
+							<ul id="gen">
+								<li>
+								<input type="radio" name="genero" id="mujer" value="mujer">
+								<label for="mujer">Femenino</label>
+								</li>
+								<li>
+								<input type="radio" name="genero" id="hombre" value="hombre">
+								<label for="hombre">Masculino</label>
+								</li>
+							</ul>
+					</fieldset>
+				</p>
+
+				<p>			
+					<fieldset>
+						<legend>Pasatiempos</legend>
+						<ul id="gen">
+						  <li>
+							<input type="checkbox" name="" id="pasatiempo">Cine
+						  </li>
+						   <li>
+						   	<input type="checkbox" name="" id="pasatiempo">Música 
+						   </li>
+						   <li>
+						   	<input type="checkbox" name="" id="pasatiempo">Bailar
+						   </li>
+						</ul>
+						</fieldset>
+				</p>
+				</div>	
+						
+					<input type="hidden" name="idioma" value="spanish"><hr>
+					<p>
+					<input type="submit" name="" value="Enviar datos">
+					</p>
+					<p>	
+					<input type="reset" name="" value="Restablecer">
+					</p>
+				</div>
+			</div>
+		</form> 	
+	</div>
+	</body>
+</html>
+
+<!-- em =cursiva <strong>Negrita</strong> </hr> salto de línea con una barra>-->
+<!-- https://allthetags.com/ etiquetas-->
+<!--otro checkbox 
+<label><input type="checkbox" id="chckb"name="">Playa</label>-->
